@@ -837,7 +837,8 @@ details[open] .comparison-toggle .c-toggle-icon{transform:rotate(45deg)}
 
 
 <!-- ══ REPLAY BANNER ═══════════════════════════════════════════════════
-     VISIBLE, with the replay wired up: the title card below swaps for
+     HIDDEN for now (see `hidden` on the <section> tag). When shown, the
+     replay is wired up: the title card below swaps for
      the embed on click.
 
      TO SWAP THE VIDEO: change the ID in data-video-src on #replay-cover
@@ -846,10 +847,10 @@ details[open] .comparison-toggle .c-toggle-icon{transform:rotate(45deg)}
      The old hero overview video, if you want it here in the meantime:
      https://www.youtube.com/embed/p16fu7r4zuc?rel=0
 
-     TO HIDE THE WHOLE BANNER: add `hidden` to the <section> tag below.
+     TO SHOW THE BANNER AGAIN: remove `hidden` from the <section> tag below.
      Headline and subhead are placeholder copy - swap for real wording.
 ════════════════════════════════════════════════════════════════════ -->
-<section class="replay-banner" id="replay">
+<section class="replay-banner" id="replay" hidden>
   <div class="wrap">
     <div class="replay-stack">
       <div class="replay-copy">
