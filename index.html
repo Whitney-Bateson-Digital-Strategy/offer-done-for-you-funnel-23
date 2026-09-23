@@ -81,7 +81,7 @@ section{padding:80px 0}
 
    TO CHANGE THE DEADLINE: edit data-deadline on <body>. It drives every
    countdown on the page. Dates written out in copy are separate - search
-   the file for "September 28".
+   the file for "September 29".
    TO SWITCH TO THE WHITE VERSION: add class="offer-bar offer-bar-light"
    on the <div class="offer-bar"> in the markup.
 ─────────────────────────────────────────────────────────────────── */
@@ -601,6 +601,7 @@ footer a:hover{color:var(--white)}
    fixed-height frame - otherwise the card grid goes ragged. */
 .funnel-mock img{display:block;max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
 @media(max-width:620px){.funnel-mock{height:220px}}
+.funnel-kicker{display:block;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--coral);margin-bottom:6px}
 .funnel-step-title{font-family:var(--head);font-size:1.45rem;font-weight:600;color:var(--navy);margin-bottom:8px;line-height:1.2}
 .funnel-step-desc{font-size:15.5px;color:var(--muted);line-height:1.62;margin-bottom:12px}
 /* Carries the flow narrative the old #included list used to hold: what this
@@ -618,7 +619,7 @@ footer a:hover{color:var(--white)}
 
    THE DEADLINE lives in ONE place: data-deadline on <body>. The written
    dates in this section's copy still have to be changed by hand - search
-   for "September 28". */
+   for "September 29". */
 #included{padding-top:48px;padding-bottom:92px}
 @media(max-width:640px){#how{padding-bottom:28px}#included{padding-top:36px;padding-bottom:64px}}
 .bonus-head{max-width:760px;margin:0 auto 30px;text-align:center}
@@ -796,7 +797,7 @@ details[open] .comparison-toggle .c-toggle-icon{transform:rotate(45deg)}
 }
 </style>
 </head>
-<body data-deadline="2026-09-28T23:59:59-04:00">
+<body data-deadline="2026-09-29T23:59:59-04:00">
 
 <!-- ══ STICKY OFFER BAR ════════════════════════════════════════════════
      Offer + live countdown + button in one sticky band. This replaces the
@@ -805,7 +806,7 @@ details[open] .comparison-toggle .c-toggle-icon{transform:rotate(45deg)}
      THE DEADLINE for the whole page is data-deadline on <body> (ISO 8601
      with a UTC offset; Eastern, so -04:00 on that date). Every countdown
      reads it. Dates WRITTEN OUT in copy are separate - search the file for
-     "September 28" and change those by hand.
+     "September 29" and change those by hand.
 
      WHITE VERSION: change class="offer-bar" to
      class="offer-bar offer-bar-light".
@@ -818,7 +819,7 @@ details[open] .comparison-toggle .c-toggle-icon{transform:rotate(45deg)}
       <p class="sb-copy">
         <span class="sb-dot"></span>
         <span>
-          <span class="sb-live">Get your funnel plus <span class="sb-hl">$1,491 in bonuses and discounts</span> when you enroll by Monday, September 28.</span>
+          <span class="sb-live">Get your funnel plus <span class="sb-hl">$1,491 in bonuses and discounts</span> when you enroll by Tuesday, September 29 at 11:59 pm ET.</span>
           <span class="sb-expired" hidden>Get your funnel built for you &ndash; <span class="sb-hl">one team, start to launch.</span></span>
         </span>
       </p>
@@ -1098,6 +1099,7 @@ details[open] .comparison-toggle .c-toggle-icon{transform:rotate(45deg)}
       <div class="funnel-step" role="listitem">
         <span class="funnel-num">01</span>
         <div class="funnel-mock"><img src="lead-magnet_mockup.png" alt="A designed lead magnet PDF guide" loading="lazy" decoding="async" /></div>
+        <span class="funnel-kicker">Lead Magnet</span>
         <div class="funnel-step-title">Client Magnet</div>
         <div class="funnel-step-desc">A free, useful resource your ideal client actually wants. We improve an existing one, or create it from scratch from your expertise.</div>
         <p class="funnel-why">Without something worth signing up for, you can't get leads.</p>
@@ -1106,6 +1108,7 @@ details[open] .comparison-toggle .c-toggle-icon{transform:rotate(45deg)}
       <div class="funnel-step" role="listitem">
         <span class="funnel-num">02</span>
         <div class="funnel-mock"><img src="opt-in_mockup.png" alt="Opt-in landing page shown on a phone" loading="lazy" decoding="async" /></div>
+        <span class="funnel-kicker">Opt-In Page</span>
         <div class="funnel-step-title">Conversion Page</div>
         <div class="funnel-step-desc">A focused landing page with copy written for your audience, connected to your email platform so everything flows automatically.</div>
         <p class="funnel-why">This is where strangers become leads.</p>
@@ -1114,6 +1117,7 @@ details[open] .comparison-toggle .c-toggle-icon{transform:rotate(45deg)}
       <div class="funnel-step" role="listitem">
         <span class="funnel-num">03</span>
         <div class="funnel-mock"><img src="thank-you_mockup.png" alt="Thank you page confirming the guide is on its way" loading="lazy" decoding="async" /></div>
+        <span class="funnel-kicker">Thank You Page</span>
         <div class="funnel-step-title">Welcome Mat</div>
         <div class="funnel-step-desc">Confirms the resource is on its way and gives the new subscriber a clear next step.</div>
         <p class="funnel-why">Keeps the momentum going right after someone signs up.</p>
@@ -1122,6 +1126,7 @@ details[open] .comparison-toggle .c-toggle-icon{transform:rotate(45deg)}
       <div class="funnel-step" role="listitem">
         <span class="funnel-num">04</span>
         <div class="funnel-mock"><img src="delivery-sequence_mockup.png" alt="Lead magnet delivery email and the automated sequence behind it" loading="lazy" decoding="async" /></div>
+        <span class="funnel-kicker">Email Sequence</span>
         <div class="funnel-step-title">Nurture Sequence</div>
         <div class="funnel-step-desc">5 emails total, all delivered within two weeks &ndash; starting with a delivery email the moment someone signs up, then introducing you, sharing your perspective, and warming subscribers to what you offer.</div>
         <p class="funnel-why">Most people aren't ready to book right away. This keeps them engaged until they are.</p>
@@ -1130,6 +1135,7 @@ details[open] .comparison-toggle .c-toggle-icon{transform:rotate(45deg)}
       <div class="funnel-step" role="listitem">
         <span class="funnel-num">05</span>
         <div class="funnel-mock"><img src="ads_mockup.png" alt="Facebook and Instagram ad mockups on phones" loading="lazy" decoding="async" /></div>
+        <span class="funnel-kicker">Ad Campaign</span>
         <div class="funnel-step-title">Traffic Engine</div>
         <div class="funnel-step-desc">Copy written, graphic designed, targeting set up, and the campaign launched. Runs at a small daily budget (e.g. $5/day) &ndash; you own the account and can pause anytime.</div>
         <p class="funnel-why">Without traffic, a funnel just sits there. This is what makes it work every day.</p>
@@ -1149,7 +1155,7 @@ details[open] .comparison-toggle .c-toggle-icon{transform:rotate(45deg)}
 
     <div class="bonus-head fi">
       <span class="bonus-eyebrow">
-        <span class="bonus-eyebrow-dot"></span>Only until Monday, September 28
+        <span class="bonus-eyebrow-dot"></span>Only until Tuesday, September 29
       </span>
       <h2>Plus, these come with it.</h2>
     </div>
@@ -1213,7 +1219,7 @@ details[open] .comparison-toggle .c-toggle-icon{transform:rotate(45deg)}
     <div class="bonus-total fi d3">
       <span class="bonus-total-label">Total bonus value</span>
       <span class="bonus-total-num">$1,091</span>
-      <span class="bonus-total-note">Yours at no extra cost when you enroll by Monday, September 28.</span>
+      <span class="bonus-total-note">Yours at no extra cost when you enroll by Tuesday, September 29 at 11:59 pm ET.</span>
     </div>
 
     <figure class="pull-quote fi d3">
@@ -1224,7 +1230,7 @@ details[open] .comparison-toggle .c-toggle-icon{transform:rotate(45deg)}
     </figure>
 
     <div class="bonus-cta fi d3">
-      <p class="bonus-cta-line">Yours when you enroll by Monday.</p>
+      <p class="bonus-cta-line">Yours when you enroll by Tuesday.</p>
       <a class="btn btn-p" href="#pricing">Claim your spot</a>
     </div>
 
@@ -1317,7 +1323,7 @@ details[open] .comparison-toggle .c-toggle-icon{transform:rotate(45deg)}
     <div class="section-cta section-cta-left fi d2">
       <p class="section-cta-line">Want this running in the background of your practice?</p>
       <a class="btn btn-p" href="#pricing">Get started</a>
-      <p class="section-cta-sub">Special pricing ends Monday, September 28.</p>
+      <p class="section-cta-sub">Special pricing ends Tuesday, September 29 at 11:59 pm ET.</p>
     </div>
   </div>
 </section>
@@ -1679,7 +1685,7 @@ details[open] .comparison-toggle .c-toggle-icon{transform:rotate(45deg)}
            .price-note, and set .price-big to $1,997. -->
       <span class="price-was">$1,997</span>
       <span class="price-big">$1,597</span>
-      <p class="price-note"><strong>Save $400.</strong> Special pricing ends Monday, September 28.</p>
+      <p class="price-note"><strong>Save $400.</strong> Special pricing ends Tuesday, September 29 at 11:59 pm ET.</p>
       <p class="p-caption">One-time payment. No ongoing fees from us.</p>
 
       <hr class="p-divider"/>
@@ -1806,7 +1812,7 @@ details[open] .comparison-toggle .c-toggle-icon{transform:rotate(45deg)}
   <div class="wrap">
     <div class="fi">
       <h2>If you've been meaning to build this for a while, <span class="ul">this is the shortcut</span>.</h2>
-      <p class="sub"><span class="nb">$1,597 one-time, until Monday, September 28.</span> <span class="nb">We do the work. You finally get a system bringing in new leads while you focus on your practice.</span></p>
+      <p class="sub"><span class="nb">$1,597 one-time, until Tuesday, September 29 at 11:59 pm ET.</span> <span class="nb">We do the work. You finally get a system bringing in new leads while you focus on your practice.</span></p>
       <div class="close-ctas">
         <a class="btn btn-p" href="#pricing">Get started · $1,597</a>
         <a class="btn btn-s" href="https://whitneybateson.as.me/dfy-funnel-discovery" target="_blank" rel="noopener">Book a call first</a>
