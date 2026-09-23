@@ -838,9 +838,7 @@ details[open] .comparison-toggle .c-toggle-icon{transform:rotate(45deg)}
 
 
 <!-- ══ REPLAY BANNER ═══════════════════════════════════════════════════
-     HIDDEN for now (see `hidden` on the <section> tag). When shown, the
-     replay is wired up: the title card below swaps for
-     the embed on click.
+     Live. The title card below swaps for the embed on click.
 
      TO SWAP THE VIDEO: change the ID in data-video-src on #replay-cover
      (https://www.youtube.com/embed/VIDEO_ID?autoplay=1&rel=0).
@@ -848,10 +846,10 @@ details[open] .comparison-toggle .c-toggle-icon{transform:rotate(45deg)}
      The old hero overview video, if you want it here in the meantime:
      https://www.youtube.com/embed/p16fu7r4zuc?rel=0
 
-     TO SHOW THE BANNER AGAIN: remove `hidden` from the <section> tag below.
+     TO HIDE THE BANNER: add `hidden` to the <section> tag below.
      Headline and subhead are placeholder copy - swap for real wording.
 ════════════════════════════════════════════════════════════════════ -->
-<section class="replay-banner" id="replay" hidden>
+<section class="replay-banner" id="replay">
   <div class="wrap">
     <div class="replay-stack">
       <div class="replay-copy">
@@ -865,7 +863,7 @@ details[open] .comparison-toggle .c-toggle-icon{transform:rotate(45deg)}
                sitting above the video. For a plain still of Whitney instead,
                swap the src below for video-overlay.png and set
                --play-x back to 50% on .replay-cover in the CSS. -->
-          <button class="replay-cover" id="replay-cover" type="button" data-video-src="https://www.youtube.com/embed/FRNAHlJ1anA?autoplay=1&amp;rel=0" aria-label="Play the training replay">
+          <button class="replay-cover" id="replay-cover" type="button" data-video-src="https://www.youtube.com/embed/hjEghUxSl-s?autoplay=1&amp;rel=0" aria-label="Play the training replay">
             <img class="replay-cover-img" src="Funnel%20Webinar%20V1%20(1).png" width="1920" height="1080"
                  alt="Free training: the list-building system that brings in clients while you're off social media" />
             <span class="replay-play">
